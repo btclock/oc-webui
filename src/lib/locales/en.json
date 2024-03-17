@@ -1,0 +1,95 @@
+{
+	"section": {
+		"settings": {
+			"title": "Settings",
+			"textColor": "Text color",
+			"preview": "Preview",
+			"backgroundColor": "Background color",
+			"ledPowerOnTest": "LED power-on test",
+			"ledFlashOnBlock": "LED flash on new block",
+			"timePerScreen": "Time per screen",
+			"ledBrightness": "LED brightness",
+			"timezoneOffset": "Timezone offset",
+			"timeBetweenPriceUpdates": "Time between price updates",
+			"fullRefreshEvery": "Full refresh every",
+			"mempoolnstance": "Mempool Instance",
+			"hostnamePrefix": "Hostname prefix",
+			"StealFocusOnNewBlock": "Steal focus on new block",
+			"useBigCharsMcap": "Use big characters for market cap",
+			"useBlkCountdown": "Blocks countdown for halving",
+			"useSatsSymbol": "Use sats symbol",
+			"suffixPrice": "Suffix price format",
+			"disableLeds": "Disable all LEDs effects",
+			"otaUpdates": "OTA updates",
+			"enableMdns": "mDNS",
+			"fetchEuroPrice": "Fetch € price",
+			"shortAmountsWarning": "Short amounts might shorten lifespan of the displays",
+			"tzOffsetHelpText": "A restart is required to apply TZ offset.",
+			"screens": "Screens",
+			"wifiTxPowerText": "In most cases this does not need to be set.",
+			"wifiTxPower": "WiFi TX power",
+			"settingsSaved": "Settings saved",
+			"errorSavingSettings": "Error saving settings"
+		},
+		"lines": {
+			"TIME": "Time",
+			"DATE": "Date",
+			"SATSPERUNIT": "Sats per unit (Moscow time)",
+			"FIATPRICE": "Fiat Price",
+			"BLOCKHEIGHT": "Block Height",
+			"MEMPOOL_FEES": "Mempool Fees (summary)",
+			"MEMPOOL_FEES_MEDIAN": "Mempool Fees (median)",
+			"HALVING_COUNTDOWN": "Halving Countdown (blocks)",
+			"MARKETCAP": "Market Cap"
+		},
+		"control": {
+			"systemInfo": "System info",
+			"version": "Version",
+			"buildTime": "Build time",
+			"ledColor": "LED color",
+			"turnOff": "Turn off",
+			"setColor": "Set color",
+			"showText": "Show text",
+			"text": "Text",
+			"title": "Control",
+			"hostname": "Hostname"
+		},
+		"status": {
+			"title": "Status",
+			"screenCycle": "Screen cycle",
+			"memoryFree": "Memory free",
+			"wsPriceConnection": "WS Price connection",
+			"wsMempoolConnection": "WS Mempool.space connection",
+			"fetchEuroNote": "If you use \"Fetch € price\" the WS Price connection will show ❌  since it uses another data source.",
+			"uptime": "Uptime",
+			"wifiSignalStrength": "WiFi Signal strength"
+		}
+	},
+	"colors": {
+		"black": "Black",
+		"white": "White"
+	},
+	"time": {
+		"minutes": "minutes",
+		"seconds": "seconds"
+	},
+	"restartRequired": "restart required",
+	"button": {
+		"save": "Save",
+		"reset": "Reset",
+		"restart": "Restart",
+		"forceFullRefresh": "Force full refresh"
+	},
+	"timer": {
+		"running": "running",
+		"stopped": "stopped"
+	},
+	"sections": {
+		"control": {
+			"keepSameColor": "Keep same color"
+		}
+	},
+	"rssiBar": {
+		"tooltip": "Values > -67 dBm are considered good. > -30 dBm is amazing"
+	}
+}

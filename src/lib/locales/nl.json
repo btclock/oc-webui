@@ -1,0 +1,82 @@
+{
+	"section": {
+		"settings": {
+			"title": "Instellingen",
+			"textColor": "Tekstkleur",
+			"backgroundColor": "Achtergrondkleur",
+			"timeBetweenPriceUpdates": "Tijd tussen prijs updates",
+			"timezoneOffset": "Tijdzone afwijking",
+			"ledBrightness": "LED helderheid",
+			"timePerScreen": "Tijd per scherm",
+			"fullRefreshEvery": "Volledig verversen elke",
+			"shortAmountsWarning": "Lage waardes verkorten mogelijk levensduur schermen",
+			"tzOffsetHelpText": "Herstart nodig voor toepassen afwijking.",
+			"enableMdns": "mDNS",
+			"ledPowerOnTest": "LED test bij aanzetten",
+			"StealFocusOnNewBlock": "Pak aandacht bij nieuw blok",
+			"ledFlashOnBlock": "Knipper led bij nieuw blok",
+			"useBigCharsMcap": "Gebruik grote tekens bij market cap",
+			"useBlkCountdown": "Blocks aftellen voor halving",
+			"useSatsSymbol": "Gebruik sats symbol",
+			"fetchEuroPrice": "Toon € prijs",
+			"screens": "Schermen",
+			"hostnamePrefix": "Hostnaam voorvoegsel",
+			"mempoolnstance": "Mempool instantie",
+			"suffixPrice": "Achtervoegsel prijs formaat",
+			"disableLeds": "Alle LEDs effecten uit",
+			"otaUpdates": "OTA updates",
+			"wifiTxPower": "WiFi TX power",
+			"wifiTxPowerText": "Meestal hoeft dit niet aangepast te worden.",
+			"settingsSaved": "Instellingen opgeslagen",
+			"errorSavingSettings": "Fout bij opslaan instellingen"
+		},
+		"control": {
+			"systemInfo": "Systeeminformatie",
+			"version": "Versie",
+			"buildTime": "Bouwtijd",
+			"setColor": "Kleur instellen",
+			"turnOff": "Uitzetten",
+			"ledColor": "LED kleur",
+			"showText": "Toon tekst",
+			"text": "Tekst",
+			"title": "Besturing"
+		},
+		"status": {
+			"title": "Status",
+			"memoryFree": "Geheugen vrij",
+			"screenCycle": "Scherm cyclus",
+			"wsPriceConnection": "WS Prijs verbinding",
+			"wsMempoolConnection": "WS Mempool.space verbinding",
+			"fetchEuroNote": "Wanneer je \"Toon € prijs\" aanzet, zal de prijsverbinding als ❌ verbroken getoond worden vanwege het gebruik van een andere bron.",
+			"uptime": "Uptime",
+			"wifiSignalStrength": "WiFi signaalsterkte"
+		}
+	},
+	"colors": {
+		"black": "Zwart",
+		"white": "Wit"
+	},
+	"time": {
+		"minutes": "minuten",
+		"seconds": "seconden"
+	},
+	"restartRequired": "herstart nodig",
+	"button": {
+		"save": "Opslaan",
+		"reset": "Herstel",
+		"restart": "Herstart",
+		"forceFullRefresh": "Forceer scherm verversen"
+	},
+	"timer": {
+		"running": "actief",
+		"stopped": "gestopt"
+	},
+	"sections": {
+		"control": {
+			"keepSameColor": "Behoud zelfde kleur"
+		}
+	},
+	"rssiBar": {
+		"tooltip": "Waarden > -67 dBm zijn goed. > -30 dBm is verbazingwekkend"
+	}
+}

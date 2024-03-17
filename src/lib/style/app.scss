@@ -1,0 +1,195 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/variables-dark';
+
+@import '@fontsource/libre-franklin';
+
+@font-face {
+	font-family: 'orangeclock-icons';
+	src:
+		url('/subset-orangeclock-icons.woff2') format('woff2'),
+		url('/subset-orangeclock-icons.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.icon {
+	font-family: 'orangeclock-icons';
+}
+
+$form-range-track-bg: #fff;
+$color-mode-type: media-query;
+$font-family-base: 'Ubuntu';
+$font-size-base: 0.9rem;
+//$font-size-sm: $font-size-base * .875 !default;
+//$form-label-font-size: $font-size-base * .575 !default;
+//$input-btn-font-size-sm: 0.4rem;
+//$form-label-font-size: 0.4rem;
+$input-font-size-sm: $font-size-base * 0.875;
+
+// $border-radius:               .675rem;
+
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/utilities';
+
+@import '../node_modules/bootstrap/scss/root';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/forms';
+@import '../node_modules/bootstrap/scss/buttons';
+@import '../node_modules/bootstrap/scss/button-group';
+@import '../node_modules/bootstrap/scss/pagination';
+
+@import '../node_modules/bootstrap/scss/dropdown';
+
+@import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/nav';
+@import '../node_modules/bootstrap/scss/card';
+@import '../node_modules/bootstrap/scss/progress';
+@import '../node_modules/bootstrap/scss/tooltip';
+@import '../node_modules/bootstrap/scss/toasts';
+
+@import '../node_modules/bootstrap/scss/helpers';
+@import '../node_modules/bootstrap/scss/utilities/api';
+
+@include media-breakpoint-down(xl) {
+	html {
+		font-size: 85%;
+	}
+
+	button.btn,
+	input[type='button'].btn,
+	input[type='submit'].btn,
+	input[type='reset'].btn {
+		@include button-size(
+			$btn-padding-y-sm,
+			$btn-padding-x-sm,
+			$font-size-sm,
+			$btn-border-radius-sm
+		);
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	html {
+		font-size: 75%;
+	}
+}
+
+nav {
+	margin-bottom: 15px;
+}
+
+.splitText div:first-child::after {
+	display: block;
+	content: '';
+	margin-top: 0px;
+	border-bottom: 2px solid;
+	margin-bottom: 3px;
+}
+
+#screen-wrapper {
+	margin: 0 auto;
+	display: flex;
+	width: 75%; /* Container takes up full width */
+	max-width: 75%; /* Ensure it doesn't exceed the available width */
+	position: relative; /* Establishes the containing block for absolute positioning */
+	//	background-color: lightgray; /* Optional: Just for visualization */
+}
+
+.ar-wrapper {
+	// padding-top: calc(122 / 250 * 100%); /* Aspect ratio: height / width * 100% */
+	// position: relative;
+	// width: 100%; /* Ensure the wrapper takes up full width */
+	padding-top: calc(122 / 250 * 100%); /* Aspect ratio: height / width * 100% */
+	position: relative;
+	width: 100%; /* Ensure the wrapper takes up full width */
+}
+
+.oc-screen {
+	position: absolute; /* Position content absolutely within the wrapper */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+	color: black;
+
+	// border: 1px solid darkgray;
+	background: lightgrey;
+	// border-radius: 5px;
+	// padding: 10px;
+	// margin: 0 auto;
+	// display: flex;
+	flex-direction: column;
+	// flex-wrap: nowrap;
+	// justify-content: center;
+	// align-items: center;
+	// align-content: center;
+	font-family: 'Libre Franklin';
+	font-weight: 600;
+	.oc-row .icon {
+		display: inline-block;
+		font-weight: normal;
+		font-size: 90%;
+	}
+
+	.oc-row:nth-child(1) {
+		font-size: 1.5vw;
+		display: block;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		align-self: auto;
+		order: 0;
+	}
+
+	.oc-row:nth-child(2) {
+		font-size: 3vw;
+		display: block;
+		font-weight: bold;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		align-self: auto;
+		order: 0;
+	}
+
+	.oc-row:nth-child(3) {
+		font-size: 2vw;
+		display: block;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		align-self: auto;
+		order: 0;
+	}
+}
+
+#customText {
+	text-transform: uppercase;
+}
+.system_info {
+	padding: 0;
+
+	li {
+		list-style: none;
+	}
+}
+
+.card-title {
+	margin-bottom: 0;
+}
+
+.navbar-brand {
+	font-style: italic;
+	font-weight: 600;
+}
