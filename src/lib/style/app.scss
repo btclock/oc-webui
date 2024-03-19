@@ -95,9 +95,12 @@ nav {
 #screen-wrapper {
 	margin: 0 auto;
 	display: flex;
-	width: 75%; /* Container takes up full width */
-	max-width: 75%; /* Ensure it doesn't exceed the available width */
-	position: relative; /* Establishes the containing block for absolute positioning */
+	width: 75%;
+	/* Container takes up full width */
+	max-width: 75%;
+	/* Ensure it doesn't exceed the available width */
+	position: relative;
+	/* Establishes the containing block for absolute positioning */
 	//	background-color: lightgray; /* Optional: Just for visualization */
 }
 
@@ -105,13 +108,16 @@ nav {
 	// padding-top: calc(122 / 250 * 100%); /* Aspect ratio: height / width * 100% */
 	// position: relative;
 	// width: 100%; /* Ensure the wrapper takes up full width */
-	padding-top: calc(122 / 250 * 100%); /* Aspect ratio: height / width * 100% */
+	padding-top: calc(122 / 250 * 100%);
+	/* Aspect ratio: height / width * 100% */
 	position: relative;
-	width: 100%; /* Ensure the wrapper takes up full width */
+	width: 100%;
+	/* Ensure the wrapper takes up full width */
 }
 
 .oc-screen {
-	position: absolute; /* Position content absolutely within the wrapper */
+	position: absolute;
+	/* Position content absolutely within the wrapper */
 	top: 0;
 	left: 0;
 	right: 0;
@@ -136,6 +142,7 @@ nav {
 	// align-content: center;
 	font-family: 'Libre Franklin';
 	font-weight: 600;
+
 	.oc-row .icon {
 		display: inline-block;
 		font-weight: normal;
@@ -177,6 +184,7 @@ nav {
 #customText {
 	text-transform: uppercase;
 }
+
 .system_info {
 	padding: 0;
 
@@ -189,7 +197,43 @@ nav {
 	margin-bottom: 0;
 }
 
+.navbar {
+	// display: flex;
+	// align-items: center;
+	//	height: 60px;
+}
+
+@include color-mode(light) {
+	.darkModeLogo {
+		display: none;
+	}
+}
+
+@include color-mode(dark) {
+	.lightModeLogo {
+		display: none;
+	}
+}
+
 .navbar-brand {
 	font-style: italic;
 	font-weight: 600;
+
+	img {
+		max-height: $navbar-brand-height;
+		// position: absolute;
+		// top: 50%;
+		// transform: translateY(-50%);
+		// max-height: calc(100% - 1rem); /* Adjust the padding as per your navbar */
+		// max-width: calc(100% - 3rem); /* Adjust the padding as per your navbar */
+		// max-height: 100%;
+		// max-width: 100%;
+		// height: auto;
+		// width: auto;
+	}
+
+	.navbar-nav {
+		margin-left: auto;
+		/* Push the navbar items to the right */
+	}
 }

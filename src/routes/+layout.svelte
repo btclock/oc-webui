@@ -51,7 +51,10 @@
 </script>
 
 <Navbar expand="md">
-	<NavbarBrand>OrangeBTClock</NavbarBrand>
+	<NavbarBrand>
+		<img src="/assets/logo-dark.svg" alt="OrangeClock" class="darkModeLogo" />
+		<img src="/assets/logo.svg" alt="OrangeClock" class="lightModeLogo" />
+	</NavbarBrand>
 	<Collapse navbar expand="md">
 		<Nav class="me-auto" navbar>
 			<NavItem>
